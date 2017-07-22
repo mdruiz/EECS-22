@@ -1,0 +1,56 @@
+Script started on Sun 12 Oct 2014 09:45:02 PM PDT
+crystalcove% ./blackjack
+***********************************
+** Welcome to EECS 22 BlackJack! **
+***********************************
+Your first card is:2 
+Do you want another card? 
+Type 1 for Yes, 0 for No: 
+1
+Your next card is:8 
+Your combined value is:10 
+Do you want another card? 
+Type 1 for Yes, 0 for No: 
+1
+Your next card is:10 
+Your combined value is:20 
+Do you want another card? 
+Type 1 for Yes, 0 for No: 
+0
+Dealer draws another card.
+Dealer's card is:6
+Dealer's value is 6, you have 20. 
+Dealer draws another card.
+Dealer's card is:10
+Dealer's value is 16, you have 20. 
+Dealer draws another card.
+Dealer's card is:9
+Dealer's value is 25, you have 20. 
+Dealer loses. You win! 
+crystalcove% ./blackjack
+***********************************
+** Welcome to EECS 22 BlackJack! **
+***********************************
+Your first card is:6 
+Do you want another card? 
+Type 1 for Yes, 0 for No: 
+1
+Your next card is:9 
+Your combined value is:15 
+Do you want another card? 
+Type 1 for Yes, 0 for No: 
+0
+Dealer draws another card.
+Dealer's card is:10
+Dealer's value is 10, you have 15. 
+Dealer draws another card.
+Dealer's card is:4
+Dealer's value is 14, you have 15. 
+Dealer draws another card.
+Dealer's card is:1
+Dealer's value is 15, you have 15. 
+Sorry. You lose! 
+crystalcove% exit
+exit
+
+Script done on Sun 12 Oct 2014 09:46:43 PM PDT

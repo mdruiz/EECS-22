@@ -1,0 +1,79 @@
+Script started on Fri 12 Dec 2014 10:37:05 PM PST
+zuma% make
+gcc -ansi -Wall -c MovieLab.c -o MovieLab.o
+gcc -ansi -Wall -c Movie.c -o Movie.o
+gcc -ansi -Wall -c DIPs.c -o DIPs.o
+gcc -ansi -Wall -c ImageList.c -o ImageList.o
+gcc -ansi -Wall -c Image.c -o Image.o
+gcc -ansi -Wall MovieLab.o Movie.o DIPs.o ImageList.o  Image.o -o MovieLab
+zuma% MovieLab -h
+
+Format on command line is:
+MovieLab [option]
+-i [file_name]    to provide the input file name
+-o [file_name]    to provide the	output file name
+-f [no_frames]    to determine how many frames desired in the input stream
+-s [WidthxHeight] to set resolution of the input stream (widthxheight)
+-j                to generate the movie with JuliaSet sequences
+-bw               to activate the conversion to black and white
+-vflip            to activate vertical flip
+-hmirror          to activate horizontal flip
+-edge             to activate edge filter
+-poster           to activate posterize filter
+-cut [Start-End]  to crop the frame from the video from frame Start to frame End
+-resize [factor]  to resize the video with the provided factor [1-100]
+-fast   [factor]  to fast forward the video with the provided factor [1+]
+-rvs              to reverse the frame order of the input stream
+-h                to show this usage information
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -bw -vflip
+The movie file anteater.yuv.yuv has been read successfully!
+"Black & White" operation is done!
+The movie file anteater.yuv.yuv has been read successfully!
+"VFlip" operation is done!
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+200 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -bw -vflip[K[K[K[K[K[K[K[Kedge
+The movie file anteater.yuv.yuv has been read successfully!
+"Edge" operation is done!
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+100 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -edge[K[K[K[Kposter
+The movie file anteater.yuv.yuv has been read successfully!
+"Posterize" operation is done!
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+100 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -poster[K[K[K[K[K[Kcut 1-70
+The movie file anteater.yuv.yuv has been read successfully!
+"Crop" operation is done!
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+70 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -cut 1-70[K[K[K[K80-150
+The movie file anteater.yuv.yuv has been read successfully!
+"Crop" operation is done!
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+0 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -cut 80-150[K[K[K[K[K[K[K[K[Kfast 3
+The movie file anteater.yuv.yuv has been read successfully!
+"Fast" operation is done! Number of Frames = 34
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+34 frames are written to the file out.yuv in total 
+zuma% MovieLab -i anteater -o out -f 100 -s 352x288 -fast 3[K[K[K[K[Kresize 75
+The movie file anteater.yuv.yuv has been read successfully!
+"Resize" operation is done! New Width/Height = 264x216
+start savemovie, total frame 100
+The movie file out.yuv has been written successfully! 
+100 frames are written to the file out.yuv in total 
+zuma% make clean
+rm -f *.o
+rm -f MovieLab
+rm -f out.yuv
+zuma% exit
+exit
+
+Script done on Fri 12 Dec 2014 10:40:22 PM PST

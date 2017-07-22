@@ -1,0 +1,109 @@
+Script started on Tue 11 Nov 2014 10:44:07 PM PST
+crystalcove% make
+gcc -Wall -ansi -c PhotoLab.c -o PhotoLab.o
+gcc -Wall -ansi -c FileIO.c -o FileIO.o
+gcc -Wall -ansi -c DIPs.c -o DIPs.o
+gcc -Wall -ansi -c Advanced.c -o Advanced.o
+gcc -Wall -ansi PhotoLab.o FileIO.o DIPs.o Advanced.o -o PhotoLab2
+crystalcove% PhotoLab2
+----------------------------------
+1:  Load a PPM image
+2:  Save an image in PPM and JPEG format
+3:  Change a color image to Black & White
+4:  Flip an image vertically
+5:  Mirror an image horizontally
+6:  Color filter an image
+7:  Sketch the edge of an image
+8:  Shuffle an image
+9:  Posterize the image
+10: Fill Lights to an image
+11: Overlay an image
+12:  BONUS: Cut and Paste operartion on image
+13: Test all functions
+14: Exit
+Please make your choice: 13
+RingMall.ppm was read successfully!
+"Black & White" operation is done!
+bw.ppm was saved successfully. 
+bw.jpg was stored for viewing. 
+"Black & White" operation is done!
+
+RingMall.ppm was read successfully!
+"VFlip" operation is done!
+vflip.ppm was saved successfully. 
+vflip.jpg was stored for viewing. 
+"VFlip" operation is done!
+
+RingMall.ppm was read successfully!
+"HMirror" operation is done!
+hmirror.ppm was saved successfully. 
+hmirror.jpg was stored for viewing. 
+"HMirror" operation is done!
+
+RingMall.ppm was read successfully!
+"Color Filter" operation is done!
+colorfilter.ppm was saved successfully. 
+colorfilter.jpg was stored for viewing. 
+"Color Filter" operation is done!
+
+RingMall.ppm was read successfully!
+"Edge" operation is done!
+edge.ppm was saved successfully. 
+edge.jpg was stored for viewing. 
+"Edge" operation is done!
+
+RingMall.ppm was read successfully!
+"Shuffle" operation is done!
+shuffle.ppm was saved successfully. 
+shuffle.jpg was stored for viewing. 
+"Shuffle" operation is done!
+
+RingMall.ppm was read successfully!
+"Posterize" operation is done!
+poster.ppm was saved successfully. 
+poster.jpg was stored for viewing. 
+"Posterize" operation is done!
+
+RingMall.ppm was read successfully!
+"FillLight" operation is done!
+light.ppm was saved successfully. 
+light.jpg was stored for viewing. 
+"FillLight" operation is done!
+
+RingMall.ppm was read successfully!
+Peter.ppm was read successfully!
+"Image Overlay" operation is done!
+overlay_peter.ppm was saved successfully. 
+overlay_peter.jpg was stored for viewing. 
+"Overlay" operation is done!
+
+RingMall.ppm was read successfully!
+Spider.ppm was read successfully!
+"Image Overlay" operation is done!
+overlay_spider.ppm was saved successfully. 
+overlay_spider.jpg was stored for viewing. 
+"Overlay" operation is done!
+
+----------------------------------
+1:  Load a PPM image
+2:  Save an image in PPM and JPEG format
+3:  Change a color image to Black & White
+4:  Flip an image vertically
+5:  Mirror an image horizontally
+6:  Color filter an image
+7:  Sketch the edge of an image
+8:  Shuffle an image
+9:  Posterize the image
+10: Fill Lights to an image
+11: Overlay an image
+12:  BONUS: Cut and Paste operartion on image
+13: Test all functions
+14: Exit
+Please make your choice: 14
+crystalcove% make clean
+rm -f *.o
+rm -f PhotoLab2
+crystalcove% exit
+exit
+
+Script done on Tue 11 Nov 2014 10:49:01 PM PST
